@@ -23,12 +23,12 @@
   , diag_type      = 'file'
   , diag_file      = 'ice_diag.d'
   , print_global   = .false.
-  , print_points   = .false.
+  , print_points   = .true.
   , latpnt(1)      =  66.75
   , lonpnt(1)      =  72.5
   , latpnt(2)      =  68.0
   , lonpnt(2)      =  74.0
-  , dbug           = .false.
+  , dbug           = .true.
   , histfreq       = 'd','m','x','x','x'
   , histfreq_n     = 1, 1, 1, 1, 1
   , hist_avg       = .true.
@@ -78,7 +78,7 @@
 
 &thermo_nml
     kitd              = 1
-  , ktherm            = 2
+  , ktherm            = 1
   , conduct           = 'bubbly'
   , a_rapid_mode      =  0.5e-3
   , Rac_rapid_mode    =    10.0
@@ -174,7 +174,7 @@
   , trestore        =  0
   , restore_ice     = .false.
   , ustar_min       = 0.0005
-  , tfrz_option     = 'mushy'
+  , tfrz_option     = 'linear_salt'
 /
 
 &icefields_nml
@@ -207,7 +207,7 @@
   , f_snow_ai      = 'x' 
   , f_rain         = 'x' 
   , f_rain_ai      = 'x' 
-  , f_sst          = 'd' 
+  , f_sst          = 'm' 
   , f_sss          = 'd' 
   , f_uocn         = 'x' 
   , f_vocn         = 'x' 
@@ -233,7 +233,7 @@
   , f_Tair         = 'x' 
   , f_Tref         = 'x' 
   , f_Qref         = 'x'
-  , f_congel       = 'm' 
+  , f_congel       = 'x' 
   , f_frazil       = 'x' 
   , f_snoice       = 'x' 
   , f_dsnow        = 'x' 
@@ -252,8 +252,8 @@
   , f_fsurf_ai     = 'x'
   , f_fcondtop_ai  = 'x'
   , f_fmeltt_ai    = 'm' 
-  , f_strairx      = 'm' 
-  , f_strairy      = 'm' 
+  , f_strairx      = 'x' 
+  , f_strairy      = 'x' 
   , f_strtltx      = 'x' 
   , f_strtlty      = 'x' 
   , f_strcorx      = 'x' 
@@ -262,7 +262,7 @@
   , f_strocny      = 'x' 
   , f_strintx      = 'x' 
   , f_strinty      = 'x'
-  , f_strength     = 'm'
+  , f_strength     = 'x'
   , f_divu         = 'm'
   , f_shear        = 'm'
   , f_sig1         = 'm' 
@@ -279,7 +279,7 @@
   , f_icepresent   = 'x'
   , f_iage         = 'x'
   , f_FY           = 'x'
-  , f_aicen        = 'd'
+  , f_aicen        = 'x'
   , f_vicen        = 'm'
   , f_Tinz         = 'x'
   , f_Sinz         = 'x'
