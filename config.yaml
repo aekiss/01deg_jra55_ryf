@@ -24,7 +24,7 @@ submodels:
 
     - name: ice
       model: cice5
-      exe: cice_auscom_3600x2700_1200p_ae5c5ebc.exe
+      exe: cice_auscom_3600x2700_1200p_5de64fbe.exe
       input: cice_01deg
       timestep: 300
       ncpus: 1200
@@ -64,4 +64,4 @@ qsub_flags: -lother=hyperthread -W umask=027
 # platform:
 #    nodesize: 28
 
-postscript: sync_output_to_gdata.sh
+#postscript: sync_output_to_gdata.sh
