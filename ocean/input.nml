@@ -215,7 +215,7 @@
 
 &ocean_model_nml
     baroclinic_split = 1
-    barotropic_split = 80
+    barotropic_split = 8
     cmip_units = .true.
     debug = .false.
     dt_ocean = 150
