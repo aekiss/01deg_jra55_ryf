@@ -100,7 +100,7 @@
   , mu_rdg          = 3
   , cosw            = 1.0
   , sinw            = 0.0
-  , dragio          = 0.0
+  , dragio          = 0.0005
   , iceruf          = 0.0005
 /
 
