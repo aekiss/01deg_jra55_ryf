@@ -502,6 +502,7 @@
 /
 
 &ocean_velocity_advect_nml
+    zero_velocity_advect_horz=.true.
 /
 
 &ocean_velocity_diag_nml
