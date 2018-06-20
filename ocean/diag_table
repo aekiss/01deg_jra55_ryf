@@ -7,10 +7,10 @@ ACCESS-OM2-01
 # https://github.com/OceansAus/access-om2/wiki/MOM-diagnostics-list
 
 # output files
-"ocean_month",      1,  "months", 1, "days", "time",
-"ocean",            1,  "months", 1, "days", "time",
+"ocean_month",      1,  "days", 1, "days", "time",
+"ocean",            1,  "days", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
-"ocean_scalar",     1,  "months", 1, "days", "time",
+"ocean_scalar",     1,  "days", 1, "days", "time",
 # "ocean_temp_3hourly",    3,  "hours",  1, "days", "time",
 # "ocean_salt_3hourly",    3,  "hours",  1, "days", "time",
 # "ocean_pot_rho_2_3hourly",    3,  "hours",  1, "days", "time",
@@ -63,7 +63,7 @@ ACCESS-OM2-01
 "ocean_model","temp_yflux_adv","temp_yflux_adv","ocean","all",.true.,"none",2
 "ocean_model","diff_cbt_t","diff_cbt_t",    "ocean","all",.true.,"none",2
 "ocean_model","buoyfreq2_wt","buoyfreq2_wt",    "ocean","all",.true.,"none",2
-"ocean_model","speed","speed",    "ocean","all",.true.,"none",2
+"ocean_model","speed","speed",    "ocean","all","max","none",2
 "ocean_model","vert_pv","vert_pv",    "ocean","all",.true.,"none",2
 # for Adele:
 # "ocean_model","uhrho_et","uhrho_et",    "ocean","all",.true.,"none",2
