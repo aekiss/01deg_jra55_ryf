@@ -57,7 +57,7 @@
 /
 
 &ocean_adv_vel_diag_nml
-    diag_step = 576
+    diag_step = 1
     large_cfl_value = 10.0
     max_cfl_value = 100.0
     verbose_cfl = .true.
@@ -76,7 +76,7 @@
     barotropic_time_stepping_a = .true.
     barotropic_time_stepping_b = .false.
     debug_this_module = .false.
-    diag_step = 576
+    diag_step = 1
     eta_max = 8.0
     frac_crit_cell_height = 0.2
     pred_corr_gamma = 0.2
@@ -484,7 +484,7 @@
 /
 
 &ocean_tracer_diag_nml
-    diag_step = 576
+    diag_step = 1
     do_bitwise_exact_sum = .false.
     tracer_conserve_days = 30.0
 /
@@ -506,8 +506,8 @@
 
 &ocean_velocity_diag_nml
     debug_this_module = .false.
-    diag_step = 576
-    energy_diag_step = 5760
+    diag_step = 1
+    energy_diag_step = 1
     large_cfl_value = 10.0
     max_cfl_value = 100.0
 /
