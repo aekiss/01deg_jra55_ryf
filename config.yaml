@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
-project: v45
-walltime: 5:00:00
+project: x77
+walltime: 2:00:00
 jobname: 01deg_jra55_ryf
 ncpus: 6368 # would be nice to be able to omit this and let payu work it out: https://github.com/marshallward/payu/issues/97
 
@@ -40,7 +40,7 @@ calendar:
         years: 0
         months: 0
         days: 0
-        seconds: 39600
+        seconds: 28800
 
     start:
         year: 1
