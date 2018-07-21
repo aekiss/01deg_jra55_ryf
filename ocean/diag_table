@@ -7,10 +7,10 @@ ACCESS-OM2-01
 # https://github.com/OceansAus/access-om2/wiki/MOM-diagnostics-list
 
 # output files
-"ocean_month",      -1,  "hours", 1, "days", "time",
-"ocean",            -1,  "hours", 1, "days", "time",
+"ocean_month",      -1,  "days", 1, "days", "time",
+"ocean",            -1,  "days", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
-"ocean_scalar",     -1,  "hours", 1, "days", "time",
+"ocean_scalar",     -1,  "days", 1, "days", "time",
 # "ocean_temp_3hourly",    3,  "hours",  1, "days", "time",
 # "ocean_salt_3hourly",    3,  "hours",  1, "days", "time",
 # "ocean_pot_rho_2_3hourly",    3,  "hours",  1, "days", "time",
