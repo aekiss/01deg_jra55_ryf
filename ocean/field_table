@@ -99,4 +99,5 @@ elon = 360.0
 "rayleigh","KaraStr","itable=3341,jtable=2393,ktable_1=1,ktable_2=75,rayleigh_damp_table=86400"
 "rayleigh","KaraStr","itable=3342,jtable=2393,ktable_1=1,ktable_2=75,rayleigh_damp_table=86400"
 "rayleigh","KaraStr","itable=3343,jtable=2393,ktable_1=1,ktable_2=75,rayleigh_damp_table=86400"
+/
 
