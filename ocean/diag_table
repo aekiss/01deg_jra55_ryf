@@ -4,11 +4,13 @@ ACCESS-OM2-01
 # MOM diag table format is defined here:
 # https://github.com/mom-ocean/MOM5/blob/master/src/shared/diag_manager/diag_table.F90
 # and available diagnostics are listed here:
-# https://github.com/OceansAus/access-om2/wiki/MOM-diagnostics-list
+# https://raw.githubusercontent.com/OceansAus/access-om2/master/MOM_diags.txt
 
 # output files
+"ocean_daily",      1,  "days",   1, "days", "time",
 "ocean_month",      1,  "months", 1, "days", "time",
 "ocean",            1,  "months", 1, "days", "time",
+"ocean_snapshot",   1,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
 # "ocean_temp_3hourly",    3,  "hours",  1, "days", "time",
@@ -47,6 +49,7 @@ ACCESS-OM2-01
 "ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
+"ocean_model","speed","speed",          "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
 "ocean_model","press","press",  "ocean","all",.true.,"none",2
@@ -69,6 +72,15 @@ ACCESS-OM2-01
 # "ocean_model","uhrho_et","uhrho_et",    "ocean","all",.true.,"none",2
 # "ocean_model","vhrho_nt","vhrho_nt",    "ocean","all",.true.,"none",2
 
+# 2d & 3d fields - snapshots at end of each run
+"ocean_model","eta_t","eta_t","ocean_snapshot","all",.false.,"none",2
+"ocean_model","u","u","ocean_snapshot","all",.false.,"none",2
+"ocean_model","v","v","ocean_snapshot","all",.false.,"none",2
+
+# 2d fields - daily output
+"ocean_model","eta_t","eta_t",                     "ocean_daily","all",.true.,"none",2
+"ocean_model","surface_temp","surface_temp",     "ocean_daily","all",.true.,"none",2
+"ocean_model","mld","mld",     "ocean_daily","all",.true.,"none",2
 
 # 2d fields - monthly output
 "ocean_model","sea_level","sea_level",             "ocean_month","all",.true.,"none",2
