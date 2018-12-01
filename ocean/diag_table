@@ -49,7 +49,6 @@ ACCESS-OM2-01
 "ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
-"ocean_model","speed","speed",          "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
 "ocean_model","press","press",  "ocean","all",.true.,"none",2
