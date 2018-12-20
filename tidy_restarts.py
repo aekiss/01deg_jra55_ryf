@@ -7,7 +7,7 @@ and moving the rest to archive/CHUCKABLE/
 """
 
 from __future__ import print_function
-import os
+import os, sys
 from glob import glob
 
 restarts = glob('archive/restart???')
@@ -28,4 +28,4 @@ for r in restarts:
             else:
                 print('Keeping ' + r + ': ending time is' + lineList[-1], end='')
     except:
-        print('Error: ' + fn + ' is unreadable')
+        print('Error in', fn+':', sys.exc_info())
