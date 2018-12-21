@@ -1,33 +1,35 @@
 # PBS configuration
-queue: normal
-project: e14
+queue: express
+project: x77
 walltime: 5:00:00
 jobname: 01deg_jra55_ryf
-ncpus: 6368
+ncpus: 2064
 shortpath: /short/v45
 
 # Model configuration
 name: common
 model: access-om2
-input: /short/public/access-om2/input_38570c62/common_01deg_jra55
+input: /short/public/access-om2/input_337f4505/common_01deg_jra55
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /short/v45/aek156/CHUCKABLE/OceansAus/access-om2-yatm/access-om2/bin/yatm_b995083.exe
-      input: /short/public/access-om2/input_38570c62/yatm_01deg
+      exe: /short/public/access-om2/bin/yatm_347e0018.exe
+      input: /short/public/access-om2/input_337f4505/yatm_01deg
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: /short/v45/aek156/CHUCKABLE/OceansAus/access-om2-yatm/access-om2/bin/fms_ACCESS-OM_3d91927_libaccessom2_b995083.x
-      input: /short/public/access-om2/input_38570c62/mom_01deg
-      ncpus: 4358
+      exe: /short/public/access-om2/bin/fms_ACCESS-OM_7c8bb961.x
+      input:
+          - /short/public/access-om2/input_38570c62/minimal_mom_01deg
+          - /short/public/access-om2/input_38570c62/mom_01deg
+      ncpus: 1717
 
     - name: ice
       model: cice5
-      exe: /short/v45/aek156/CHUCKABLE/OceansAus/access-om2-yatm/access-om2/bin/cice_auscom_3600x2700_2000p_fb743ae_libaccessom2_b995083.exe
-      input: /short/public/access-om2/input_38570c62/cice_01deg
-      ncpus: 2000
+      exe: /short/public/access-om2/bin/cice_auscom_3600x2700_432p_a3632111.exe
+      input: /short/public/access-om2/input_337f4505/cice_01deg
+      ncpus: 335
 
 # Collation
 collate: true
@@ -36,6 +38,8 @@ collate_mem: 128GB
 collate_ncpus: 4
 collate_queue: expressbw
 collate_flags: -n4 -z -m -r
+
+mpirun: --mca orte_base_help_aggregate 0
 
 # Misc
 runlog: True
@@ -47,7 +51,7 @@ restart_freq: 1  # use tidy_restarts.py instead
 # Ben Menadue suggestion, email 2018-04-18
 # mpirun: -mca coll ^fca --mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
 # mpirun: --mca orte_base_help_aggregate 0 --mca pml yalla
-mpirun: --mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
+# mpirun: --mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
 # Marshall 2018-08-06
 #mpirun:
 #        - -mca orte_base_help_aggregate 0
