@@ -21,6 +21,7 @@ submodels:
       model: mom
       exe: /short/public/access-om2/bin/fms_ACCESS-OM_7c8bb961.x
       input:
+          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog/input
           - /short/public/access-om2/input_38570c62/minimal_mom_01deg
           - /short/public/access-om2/input_38570c62/mom_01deg
       ncpus: 1717
