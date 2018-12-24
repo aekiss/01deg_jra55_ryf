@@ -29,7 +29,9 @@ submodels:
     - name: ice
       model: cice5
       exe: /short/public/access-om2/bin/cice_auscom_3600x2700_432p_a3632111.exe
-      input: /short/public/access-om2/input_337f4505/cice_01deg
+      input:
+          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog/input
+          - /short/public/access-om2/input_337f4505/cice_01deg
       ncpus: 335
 
 # Collation
