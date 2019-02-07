@@ -13,15 +13,17 @@ input: /short/public/access-om2/input_337f4505/common_01deg_jra55
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /short/public/access-om2/bin/yatm_347e0018.exe
-      input: /short/public/access-om2/input_337f4505/yatm_01deg
+      exe: /short/public/access-om2/bin/yatm_b77aecd2.exe
+      input: 
+          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog_scalewind/input
+          - /short/public/access-om2/input_337f4505/yatm_01deg
       ncpus: 1
 
     - name: ocean
       model: mom
       exe: /short/public/access-om2/bin/fms_ACCESS-OM_7c8bb961.x
       input:
-          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog/input
+          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog_scalewind/input
           - /short/public/access-om2/input_38570c62/minimal_mom_01deg
           - /short/public/access-om2/input_38570c62/mom_01deg
       ncpus: 1717
@@ -30,7 +32,7 @@ submodels:
       model: cice5
       exe: /short/public/access-om2/bin/cice_auscom_3600x2700_432p_a3632111.exe
       input:
-          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog/input
+          - /home/156/aek156/payu/01deg_jra55v13_ryf8485_spinup6_newtopog_scalewind/input
           - /short/public/access-om2/input_337f4505/cice_01deg
       ncpus: 335
 
@@ -72,4 +74,4 @@ qsub_flags: -lother=hyperthread -W umask=027
 #    nodesize: 28
 mpi:
     module: openmpi/1.10.2
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
