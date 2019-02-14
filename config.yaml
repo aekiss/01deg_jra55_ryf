@@ -4,7 +4,7 @@ project: e14
 walltime: 5:00:00
 jobname: 01deg_jra55_ryf
 ncpus: 5744
-shortpath: /short/x77
+shortpath: /short/v45
 
 # Model configuration
 name: common
@@ -20,15 +20,13 @@ submodels:
     - name: ocean
       model: mom
       exe: /short/public/access-om2/bin/fms_ACCESS-OM_3702ad86.x
-      input:
-          -/short/public/access-om2/input_08022019/mom_01deg
+      input: /short/public/access-om2/input_08022019/mom_01deg
       ncpus: 4358
 
     - name: ice
       model: cice5
       exe: /short/public/access-om2/bin/cice_auscom_3600x2700_432p_d063b8ea7.exe
-      input:
-          - /short/public/access-om2/input_08022019/cice_01deg
+      input: /short/public/access-om2/input_08022019/cice_01deg
       ncpus: 1385
 
 # Collation
@@ -50,4 +48,4 @@ qsub_flags: -lother=hyperthread -W umask=027
 #    nodesize: 28
 mpi:
     module: openmpi/1.10.2
-#postscript: sync_output_to_gdata.sh
+postscript: sync_output_to_gdata.sh
