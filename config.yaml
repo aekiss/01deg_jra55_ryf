@@ -1,5 +1,5 @@
 # PBS configuration
-queue: normal
+queue: normalbw
 project: x77
 walltime: 5:00:00
 jobname: 01deg_jra55_ryf
@@ -44,8 +44,8 @@ restart_freq: 1  # use tidy_restarts.py instead
 mpirun: --mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
 qsub_flags: -lother=hyperthread -W umask=027
 # for normalbw
-# platform:
-#    nodesize: 28
+platform:
+    nodesize: 28
 mpi:
     module: openmpi/1.10.2
 postscript: sync_output_to_gdata.sh
