@@ -47,7 +47,7 @@
 /
 
 &domain_nml
-    nprocs = 1385
+    nprocs = 1392
   , processor_shape   = 'square-ice'
   , distribution_type = 'sectrobin'
   , distribution_wght = 'latitude'
