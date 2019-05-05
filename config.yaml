@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normalbw
-project: e14
+project: v45
 walltime: 5:00:00
 jobname: 01deg_jra55_ryf
 ncpus: 5744
@@ -19,7 +19,7 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /short/public/access-om2/bin/fms_ACCESS-OM_3702ad86.x
+      exe: /short/public/access-om2/bin/fms_ACCESS-OM_3b6775a_libaccessom2_b77aecd.x
       input: /short/public/access-om2/input_08022019/mom_01deg
       ncpus: 4358
 
@@ -48,4 +48,4 @@ platform:
     nodesize: 28
 mpi:
     module: openmpi/1.10.2
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
