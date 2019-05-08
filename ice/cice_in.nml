@@ -49,7 +49,7 @@
 &domain_nml
     nprocs = 1392
   , processor_shape   = 'square-ice'
-  , distribution_type = 'sectrobin'
+  , distribution_type = 'roundrobin'
   , distribution_wght = 'latitude'
   , ew_boundary_type  = 'cyclic'
   , ns_boundary_type  = 'tripole'
