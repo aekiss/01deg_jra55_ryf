@@ -3,7 +3,7 @@ queue: normalbw
 project: x77
 walltime: 5:00:00
 jobname: 01deg_jra55_ryf
-ncpus: 7140
+ncpus: 5180
 shortpath: /short/v45
 
 # Model configuration
@@ -25,9 +25,9 @@ submodels:
 
     - name: ice
       model: cice5
-      exe: /short/public/access-om2/bin/cice_auscom_3600x2700_1392p_657f6ad_libaccessom2_b77aecd.exe
+      exe: /short/public/access-om2/bin/cice_auscom_3600x2700_799p_ddca4d0_libaccessom2_b77aecd.exe
       input: /short/public/access-om2/input_08022019/cice_01deg
-      ncpus: 2781
+      ncpus: 799
 
 # Collation
 collate: true

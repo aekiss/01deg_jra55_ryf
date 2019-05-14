@@ -47,7 +47,7 @@
 /
 
 &domain_nml
-    nprocs = 2781
+    nprocs = 799
   , processor_shape   = 'square-ice'
   , distribution_type = 'roundrobin'
   , distribution_wght = 'latitude'
