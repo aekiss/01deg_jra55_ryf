@@ -9,11 +9,11 @@ ACCESS-OM2-01
 # output files
 "ocean_daily_30m",   1,  "days",   1, "days", "time",
 "ocean_daily",      1,  "days",   1, "days", "time",
-"ocean_month",      1,  "months", 1, "days", "time",
-"ocean",            1,  "months", 1, "days", "time",
-"ocean_snapshot",   1,  "months", 1, "days", "time",
-"ocean_grid",      -1,  "months", 1, "days", "time",
-"ocean_scalar",     1,  "months", 1, "days", "time",
+# "ocean_month",      1,  "months", 1, "days", "time",
+# "ocean",            1,  "months", 1, "days", "time",
+# "ocean_snapshot",   1,  "months", 1, "days", "time",
+# "ocean_grid",      -1,  "months", 1, "days", "time",
+"ocean_scalar",     1,  "days", 1, "days", "time",
 
 # For Chris Chapman: Water Mass Transformation Diagnostics for tropical and subtropical Indian Ocean
 "indian_ocean_west",     1,  "months", 1, "days", "time",
@@ -40,40 +40,40 @@ ACCESS-OM2-01
 # "ocean_daily_3d_wt",  1,  "days", 1, "days", "time",
 
 # Save ocean grid data once and for all
-"ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
-"ocean_model","geolat_t","geolat_t", "ocean_grid","all",.false.,"none",2
-"ocean_model","geolon_c","geolon_c", "ocean_grid","all",.false.,"none",2
-"ocean_model","geolat_c","geolat_c", "ocean_grid","all",.false.,"none",2
-"ocean_model","ht","ht",             "ocean_grid","all",.false.,"none",2
-"ocean_model","hu","hu",             "ocean_grid","all",.false.,"none",2
-"ocean_model","dxt","dxt",           "ocean_grid","all",.false.,"none",2
-"ocean_model","dyt","dyt",           "ocean_grid","all",.false.,"none",2
-"ocean_model","dxu","dxu",           "ocean_grid","all",.false.,"none",2
-"ocean_model","dyu","dyu",           "ocean_grid","all",.false.,"none",2
-"ocean_model","area_t","area_t",     "ocean_grid","all",.false.,"none",2
-"ocean_model","area_u","area_u",     "ocean_grid","all",.false.,"none",2
-"ocean_model","kmt","kmt",           "ocean_grid","all",.false.,"none",2
-"ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
-"ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
+# "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
+# "ocean_model","geolat_t","geolat_t", "ocean_grid","all",.false.,"none",2
+# "ocean_model","geolon_c","geolon_c", "ocean_grid","all",.false.,"none",2
+# "ocean_model","geolat_c","geolat_c", "ocean_grid","all",.false.,"none",2
+# "ocean_model","ht","ht",             "ocean_grid","all",.false.,"none",2
+# "ocean_model","hu","hu",             "ocean_grid","all",.false.,"none",2
+# "ocean_model","dxt","dxt",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","dyt","dyt",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","dxu","dxu",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","dyu","dyu",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","area_t","area_t",     "ocean_grid","all",.false.,"none",2
+# "ocean_model","area_u","area_u",     "ocean_grid","all",.false.,"none",2
+# "ocean_model","kmt","kmt",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
+# "ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
 #==========================================================================
 
 # 3d fields - monthly averages
-"ocean_model","temp","temp",            "ocean","all",.true.,"none",2
-"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
-"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
-"ocean_model","u","u",                  "ocean","all",.true.,"none",2
-"ocean_model","v","v",                  "ocean","all",.true.,"none",2
-"ocean_model","wt","wt",                "ocean","all",.true.,"none",2
-"ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
+# "ocean_model","temp","temp",            "ocean","all",.true.,"none",2
+# "ocean_model","salt","salt",            "ocean","all",.true.,"none",2
+# "ocean_model","age_global","age_global","ocean","all",.true.,"none",2
+# "ocean_model","u","u",                  "ocean","all",.true.,"none",2
+# "ocean_model","v","v",                  "ocean","all",.true.,"none",2
+# "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
+# "ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
 # "ocean_model","press","press",  "ocean","all",.true.,"none",2
 # "ocean_model","rho","rho",  "ocean","all",.true.,"none",2
 # "ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
 # "ocean_model","pot_rho_2","pot_rho_2",  "ocean","all",.true.,"none",2
-"ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
-"ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
+# "ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
+# "ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
 # "ocean_model","ty_trans_submeso","ty_trans_submeso",    "ocean","all",.true.,"none",2
-"ocean_model","tx_trans_rho","tx_trans_rho","ocean","all",.true.,"none",2
-"ocean_model","ty_trans_rho","ty_trans_rho","ocean","all",.true.,"none",2
+# "ocean_model","tx_trans_rho","tx_trans_rho","ocean","all",.true.,"none",2
+# "ocean_model","ty_trans_rho","ty_trans_rho","ocean","all",.true.,"none",2
 # "ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso","ocean","all",.true.,"none",2
 # "ocean_model","temp_xflux_adv","temp_xflux_adv","ocean","all",.true.,"none",2
 # "ocean_model","temp_yflux_adv","temp_yflux_adv","ocean","all",.true.,"none",2
@@ -104,43 +104,43 @@ ACCESS-OM2-01
 "ocean_model","vorticity_z","vorticity_z",     "ocean_daily_30m","all",.true.,"-280,80,-81.125,90,26,31",2
 
 # 2d fields - monthly output
-"ocean_model","sea_level_sq","sea_levelsq",        "ocean_month","all",.true.,"none",2
-"ocean_model","surface_temp","surface_temp",     "ocean_month","all",.true.,"none",2
-"ocean_model","surface_salt","surface_salt",     "ocean_month","all",.true.,"none",2
-"ocean_model","mld","mld",                         "ocean_month","all",.true.,"none",2
-"ocean_model","pme_river","pme_river",             "ocean_month","all",.true.,"none",2
-"ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
-"ocean_model","river","river",             "ocean_month","all",.true.,"none",2
-"ocean_model","runoff","runoff",             "ocean_month","all",.true.,"none",2
-"ocean_model","evap","evap",             "ocean_month","all",.true.,"none",2
-"ocean_model","melt","melt",             "ocean_month","all",.true.,"none",2
-"ocean_model","fprec","fprec",                     "ocean_month","all",.true.,"none",2
-"ocean_model","lprec","lprec",                     "ocean_month","all",.true.,"none",2
-"ocean_model","wfimelt","wfimelt",                     "ocean_month","all",.true.,"none",2
-"ocean_model","wfiform","wfiform",                     "ocean_month","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean_month","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean_month","all",.true.,"none",2
-"ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean_month","all",.true.,"none",2
-"ocean_model","net_sfc_heating","net_sfc_heating", "ocean_month","all",.true.,"none",2
-"ocean_model","swflx","swflx", "ocean_month","all",.true.,"none",2
-"ocean_model","lw_heat","lw_heat", "ocean_month","all",.true.,"none",2
-"ocean_model","sens_heat","sens_heat", "ocean_month","all",.true.,"none",2
-"ocean_model","evap_heat","evap_heat", "ocean_month","all",.true.,"none",2
-"ocean_model","fprec_melt_heat","fprec_melt_heat", "ocean_month","all",.true.,"none",2
-"ocean_model","sfc_hflux_from_runoff","sfc_hflux_from_runoff", "ocean_month","all",.true.,"none",2
-"ocean_model","sfc_hflux_pme","sfc_hflux_pme", "ocean_month","all",.true.,"none",2
-"ocean_model","frazil_2d","frazil_2d", "ocean_month","all",.true.,"none",2
-"ocean_model","tau_x","tau_x",                     "ocean_month","all",.true.,"none",2
-"ocean_model","tau_y","tau_y",                     "ocean_month","all",.true.,"none",2
-"ocean_model","bmf_u","bmf_u",                     "ocean_month","all",.true.,"none",2
-"ocean_model","bmf_v","bmf_v",                     "ocean_month","all",.true.,"none",2
-"ocean_model","tx_trans_int_z","tx_trans_int_z",   "ocean_month","all",.true.,"none",2
-"ocean_model","ty_trans_int_z","ty_trans_int_z",   "ocean_month","all",.true.,"none",2
-"ocean_model","pbot_t","pbot_t",                   "ocean_month","all",.true.,"none",2
-"ocean_model","temp_yflux_adv_int_z","temp_yflux_adv_int_z",                   "ocean_month","all",.true.,"none",2
-"ocean_model","temp_xflux_adv_int_z","temp_xflux_adv_int_z",                   "ocean_month","all",.true.,"none",2
-"ocean_model","temp_yflux_submeso_int_z","temp_yflux_submeso_int_z",                   "ocean_month","all",.true.,"none",2
-"ocean_model","temp_xflux_submeso_int_z","temp_xflux_submeso_int_z",                   "ocean_month","all",.true.,"none",2
+# "ocean_model","sea_level_sq","sea_levelsq",        "ocean_month","all",.true.,"none",2
+# "ocean_model","surface_temp","surface_temp",     "ocean_month","all",.true.,"none",2
+# "ocean_model","surface_salt","surface_salt",     "ocean_month","all",.true.,"none",2
+# "ocean_model","mld","mld",                         "ocean_month","all",.true.,"none",2
+# "ocean_model","pme_river","pme_river",             "ocean_month","all",.true.,"none",2
+# "ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","river","river",             "ocean_month","all",.true.,"none",2
+# "ocean_model","runoff","runoff",             "ocean_month","all",.true.,"none",2
+# "ocean_model","evap","evap",             "ocean_month","all",.true.,"none",2
+# "ocean_model","melt","melt",             "ocean_month","all",.true.,"none",2
+# "ocean_model","fprec","fprec",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","lprec","lprec",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","wfimelt","wfimelt",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","wfiform","wfiform",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean_month","all",.true.,"none",2
+# "ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean_month","all",.true.,"none",2
+# "ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean_month","all",.true.,"none",2
+# "ocean_model","net_sfc_heating","net_sfc_heating", "ocean_month","all",.true.,"none",2
+# "ocean_model","swflx","swflx", "ocean_month","all",.true.,"none",2
+# "ocean_model","lw_heat","lw_heat", "ocean_month","all",.true.,"none",2
+# "ocean_model","sens_heat","sens_heat", "ocean_month","all",.true.,"none",2
+# "ocean_model","evap_heat","evap_heat", "ocean_month","all",.true.,"none",2
+# "ocean_model","fprec_melt_heat","fprec_melt_heat", "ocean_month","all",.true.,"none",2
+# "ocean_model","sfc_hflux_from_runoff","sfc_hflux_from_runoff", "ocean_month","all",.true.,"none",2
+# "ocean_model","sfc_hflux_pme","sfc_hflux_pme", "ocean_month","all",.true.,"none",2
+# "ocean_model","frazil_2d","frazil_2d", "ocean_month","all",.true.,"none",2
+# "ocean_model","tau_x","tau_x",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","tau_y","tau_y",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","bmf_u","bmf_u",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","bmf_v","bmf_v",                     "ocean_month","all",.true.,"none",2
+# "ocean_model","tx_trans_int_z","tx_trans_int_z",   "ocean_month","all",.true.,"none",2
+# "ocean_model","ty_trans_int_z","ty_trans_int_z",   "ocean_month","all",.true.,"none",2
+# "ocean_model","pbot_t","pbot_t",                   "ocean_month","all",.true.,"none",2
+# "ocean_model","temp_yflux_adv_int_z","temp_yflux_adv_int_z",                   "ocean_month","all",.true.,"none",2
+# "ocean_model","temp_xflux_adv_int_z","temp_xflux_adv_int_z",                   "ocean_month","all",.true.,"none",2
+# "ocean_model","temp_yflux_submeso_int_z","temp_yflux_submeso_int_z",                   # "ocean_month","all",.true.,"none",2
+# "ocean_model","temp_xflux_submeso_int_z","temp_xflux_submeso_int_z",                   # "ocean_month","all",.true.,"none",2
 # see https://github.com/OceansAus/ACCESS-OM2-1-025-010deg-report/pull/13#issuecomment-424594587
 
 
