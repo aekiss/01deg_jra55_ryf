@@ -11,7 +11,7 @@ case $yesno in
     * ) echo "Cancelled. Wait until model has finished before trying again."; exit 0;;
 esac
 
-for d in archive/output???/ice/OUTPUT; do
+for d in /g/data3/hh5/tmp/cosima/access-om2-01/01deg_jra55v13_ryf8485_spinup6/output???/ice/OUTPUT; do
     for f in $d/iceh.????-??.nc; do
         if [[ -f ${f/.nc/-01.nc} ]] && [[ ! -f ${f/.nc/-IN-PROGRESS} ]];
         then
