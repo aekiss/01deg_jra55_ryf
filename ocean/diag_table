@@ -14,6 +14,7 @@ ACCESS-OM2-01
 "ocean_daily",      1,  "days",   1, "days", "time",
 "ocean_month",      1,  "months", 1, "days", "time",
 "ocean",            1,  "months", 1, "days", "time",
+"ocean_snapshot",   1,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
 
@@ -69,6 +70,8 @@ ACCESS-OM2-01
 "ocean_model","buoyfreq2_wt","buoyfreq2_wt",    "ocean","all",.true.,"none",2
 #"ocean_model","speed","speed",    "ocean","all",.true.,"none",2
 "ocean_model","vert_pv","vert_pv",    "ocean","all",.true.,"none",2
+"ocean_model","aiso_bih","aiso_bih",    "ocean","all",.true.,"none",2
+"ocean_model","aaniso_bih","aaniso_bih",    "ocean","all",.true.,"none",2
 "ocean_model","bih_fric_u","bih_fric_u",    "ocean","all",.true.,"none",2
 "ocean_model","bih_fric_v","bih_fric_v",    "ocean","all",.true.,"none",2
 "ocean_model","u_dot_grad_vert_pv","u_dot_grad_vert_pv","ocean","all",.true.,"none",2
@@ -79,6 +82,12 @@ ACCESS-OM2-01
 #"ocean_model","u","u","ocean_daily_3d_u","all",.true.,"none",2
 #"ocean_model","v","v","ocean_daily_3d_v","all",.true.,"none",2
 #"ocean_model","wt","wt","ocean_daily_3d_wt","all",.true.,"none",2
+
+# 2d & 3d fields - snapshots at end of each month
+"ocean_model","eta_t","eta_t","ocean_snapshot","all",.false.,"none",2
+"ocean_model","u","u","ocean_snapshot","all",.false.,"none",2
+"ocean_model","v","v","ocean_snapshot","all",.false.,"none",2
+"ocean_model","vorticity_z","vorticity_z","ocean_snapshot","all",.false.,"none",2
 
 # for Adele:
 #"ocean_model","uhrho_et","uhrho_et",    "ocean_daily_3d_uhrho_et","all",.true.,"none",2

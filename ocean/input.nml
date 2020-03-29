@@ -122,7 +122,7 @@
     eq_vel_micom_iso = 0.0
     equatorial_zonal = .false.
     k_smag_aniso = 0.0
-    k_smag_iso = 2.0
+    k_smag_iso = 3.0
     ncar_boundary_scaling = .true.
     ncar_boundary_scaling_read = .false.
     ncar_rescale_power = 2
