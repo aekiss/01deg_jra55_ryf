@@ -121,17 +121,17 @@
     eq_vel_micom_aniso = 0.0
     eq_vel_micom_iso = 0.0
     equatorial_zonal = .false.
-    k_smag_aniso = 0.0
-    k_smag_iso = 2.0
+    k_smag_aniso = 3.0
+    k_smag_iso = 3.0
     ncar_boundary_scaling = .true.
     ncar_boundary_scaling_read = .false.
     ncar_rescale_power = 2
     ncar_vconst_4 = 2e-08
     ncar_vconst_5 = 5
     use_this_module = .true.
-    vel_micom_aniso = 0.0
+    vel_micom_aniso = 0.005
     vel_micom_bottom = 0.0
-    vel_micom_iso = 0.0
+    vel_micom_iso = 0.005
     visc_crit_scale = 1.0
 /
 
